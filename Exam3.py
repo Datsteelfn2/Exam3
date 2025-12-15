@@ -1,3 +1,9 @@
+# Program Name: Exam3.py
+# Course: IT1114
+# Student Name: Elhadj Diallo
+# Assignment Number: Exam3
+# Due Date:12/14/2025
+
 file=open('input.txt','r')
 
 for line in file:
@@ -21,5 +27,5 @@ for line in file:
     total+=score
   average=total/len(scores)
   final_score=average*dd
-  print(f"{name}'\t' {str(dd)} '\t' {str(round(final_score,1))} ")
-  file.close()
+  print(f"{name} {dd:.1f} {final_score:.1f}")
+file.close()
